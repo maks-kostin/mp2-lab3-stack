@@ -1,9 +1,15 @@
 #include <iostream>
 #include "tstack.h"
+#include "calculator.h"
 
 using namespace std;
 
 void main()
 {
-	cout << "Hello there" << endl;
+	Calculator calc;
+	calc.SetFormula("(2+2*)2+2)");
+	if (calc.CheckBrackets() == true)
+		std::cout << "Good" << endl;
+	else
+		std::cout << "Bad" << endl;
 }

@@ -122,9 +122,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="calculator.h" />
     <ClInclude Include="tstack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="calculator.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
